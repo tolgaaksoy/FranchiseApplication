@@ -35,6 +35,4 @@ public class Customer extends BaseEntity {
     @OneToMany(cascade = CascadeType.ALL, targetEntity = Appeal.class, mappedBy = "customer")
     private List<Appeal> appealList = new ArrayList<>();
 
-
-
 }
