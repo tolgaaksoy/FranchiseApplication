@@ -10,5 +10,4 @@ import lombok.*;
 @AllArgsConstructor
 public class CustomerAddressDto extends BaseDto{
     private Customer customer;
-
 }
