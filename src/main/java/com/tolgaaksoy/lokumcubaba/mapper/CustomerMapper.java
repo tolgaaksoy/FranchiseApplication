@@ -19,6 +19,6 @@ public interface CustomerMapper {
     @IterableMapping(qualifiedByName = "toCustomerList")
     List<Customer> toCustomerList(List<CustomerDto> customerDtoList);
 
-    @IterableMapping
+    @IterableMapping(qualifiedByName = "toCustomerDtoList")
     List<CustomerDto> toCustomerDtoList(List<Customer> customers);
 }

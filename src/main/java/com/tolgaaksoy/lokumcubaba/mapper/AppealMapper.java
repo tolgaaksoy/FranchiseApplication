@@ -17,6 +17,6 @@ public interface AppealMapper {
     @IterableMapping(qualifiedByName = "toAppealList")
     List<Appeal> toAppealList(List<AppealDto> appealDtoList);
 
-    @IterableMapping
+    @IterableMapping(qualifiedByName = "toAppealDtoList")
     List<AppealDto> toAppealDtoList(List<Appeal> appeals);
 }
