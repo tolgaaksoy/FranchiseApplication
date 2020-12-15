@@ -11,8 +11,6 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-
-
 @Configuration
 @EnableSwagger2
 public class SwaggerConfiguration {
@@ -27,8 +25,8 @@ public class SwaggerConfiguration {
                 .pathMapping("/");
     }
     private ApiInfo apiEndPointsInfo() {
-        return new ApiInfoBuilder().title("Spring Boot Employee Crud App")
-                .description("Employee Api Documentation")
+        return new ApiInfoBuilder().title("Spring Boot Lokumcu Baba App")
+                .description("Lokumcu Baba Api Documentation")
                 .contact(new Contact("Tolga Aksoy", "https://github.com/tolgaaksoy", "tolgaaksoy@email.com"))
                 .license("Apache 2.0")
                 .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html")
