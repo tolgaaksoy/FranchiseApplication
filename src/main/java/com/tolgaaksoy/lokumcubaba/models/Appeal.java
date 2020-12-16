@@ -19,14 +19,15 @@ public class Appeal extends BaseEntity {
     @JoinColumn(name = "customer_id", referencedColumnName = "id")
     private Customer customer;
 
-    @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY ,targetEntity = AppealAddress.class)
-    private AppealAddress appealAddress;
-
     @Column
     private int investmentAmount;
     @Column
     private String appealDescription;
     @Column
     private String extraDescription;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id", referencedColumnName = "id")
+    private Address address;
 
 }

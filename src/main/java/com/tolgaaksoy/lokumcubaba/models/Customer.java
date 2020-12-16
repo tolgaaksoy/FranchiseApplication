@@ -29,10 +29,12 @@ public class Customer extends BaseEntity {
     @Column
     private String birthday;
 
-    @OneToMany(targetEntity = CustomerAddress.class, mappedBy = "customer")
-    private List<CustomerAddress> customerAddresses = new ArrayList<>();
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id", referencedColumnName = "id")
+    private Address address;
 
     @OneToMany(cascade = CascadeType.ALL, targetEntity = Appeal.class, mappedBy = "customer")
     private List<Appeal> appealList = new ArrayList<>();
+
 
 }

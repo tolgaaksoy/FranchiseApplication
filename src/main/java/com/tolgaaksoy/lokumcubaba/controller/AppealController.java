@@ -1,7 +1,10 @@
 package com.tolgaaksoy.lokumcubaba.controller;
 
+import com.tolgaaksoy.lokumcubaba.dto.CustomerDto;
 import com.tolgaaksoy.lokumcubaba.request.AppealRequest;
+import com.tolgaaksoy.lokumcubaba.request.CustomerRequest;
 import com.tolgaaksoy.lokumcubaba.response.AppealResponse;
+import com.tolgaaksoy.lokumcubaba.response.CustomerResponse;
 import com.tolgaaksoy.lokumcubaba.services.AppealService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -23,6 +26,8 @@ public class AppealController {
         try{
             AppealResponse response = new AppealResponse();
             response.setAppealDto(appealService.addAppeal(request.getAppealDto()));
+//            CustomerResponse response = new CustomerResponse();
+//            response.setCustomerDto(appealService.addAppeal(request.getCustomerDto()));
             return ResponseEntity.ok(response);
         }
         catch (Exception e){
