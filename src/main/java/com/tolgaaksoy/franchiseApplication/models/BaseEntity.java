@@ -1,4 +1,4 @@
-package com.tolgaaksoy.lokumcubaba.models;
+package com.tolgaaksoy.franchiseApplication.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

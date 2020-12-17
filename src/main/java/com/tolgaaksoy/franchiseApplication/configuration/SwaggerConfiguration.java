@@ -1,4 +1,4 @@
-package com.tolgaaksoy.lokumcubaba.configuration;
+package com.tolgaaksoy.franchiseApplication.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,14 +19,14 @@ public class SwaggerConfiguration {
     public Docket api(){
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.tolgaaksoy.lokumcubaba"))
+                .apis(RequestHandlerSelectors.basePackage("com.tolgaaksoy.franchiseApplication"))
                 .paths(PathSelectors.any())
                 .build().apiInfo(apiEndPointsInfo())
                 .pathMapping("/");
     }
     private ApiInfo apiEndPointsInfo() {
-        return new ApiInfoBuilder().title("Spring Boot Lokumcu Baba App")
-                .description("Lokumcu Baba Api Documentation")
+        return new ApiInfoBuilder().title("Spring Boot Franchise Application")
+                .description("Franchise Application Api Documentation")
                 .contact(new Contact("Tolga Aksoy", "https://github.com/tolgaaksoy", "tolgaaksoy@email.com"))
                 .license("Apache 2.0")
                 .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html")

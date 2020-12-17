@@ -1,4 +1,4 @@
-package com.tolgaaksoy.lokumcubaba.models;
+package com.tolgaaksoy.franchiseApplication.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,7 +17,7 @@ import java.util.List;
 @NoArgsConstructor
 public class Customer extends BaseEntity {
     @Column
-    private String name;
+    private String firstName;
     @Column
     private String lastName;
     @Column
@@ -27,7 +27,7 @@ public class Customer extends BaseEntity {
     @Column
     private String idNumber;
     @Column
-    private String birthday;
+    private String birthDate;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id", referencedColumnName = "id")

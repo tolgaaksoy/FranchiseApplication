@@ -1,4 +1,4 @@
-package com.tolgaaksoy.lokumcubaba.models;
+package com.tolgaaksoy.franchiseApplication.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,16 +15,18 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class Appeal extends BaseEntity {
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "customer_id", referencedColumnName = "id")
-    private Customer customer;
-
     @Column
     private int investmentAmount;
+    @Column
+    private boolean experience;
     @Column
     private String appealDescription;
     @Column
     private String extraDescription;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "customer_id", referencedColumnName = "id")
+    private Customer customer;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id", referencedColumnName = "id")
