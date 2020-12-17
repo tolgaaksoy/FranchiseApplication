@@ -1,6 +1,5 @@
-package com.tolgaaksoy.lokumcubaba.dto;
+package com.tolgaaksoy.franchiseApplication.dto;
 
-import com.tolgaaksoy.lokumcubaba.models.Address;
 import lombok.*;
 import java.util.List;
 
@@ -9,12 +8,12 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CustomerDto extends BaseDto{
-    private String name;
+    private String firstName;
     private String lastName;
     private String phoneNumber;
     private String email;
     private String idNumber;
-    private String birthday;
+    private String birthDate;
     private AddressDto addressDto;
     private List<AppealDto> appealListDto;
 }

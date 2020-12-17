@@ -1,4 +1,4 @@
-package com.tolgaaksoy.lokumcubaba.dto;
+package com.tolgaaksoy.franchiseApplication.dto;
 
 import lombok.*;
 
@@ -9,6 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 public class AppealDto extends BaseDto {
     private int investmentAmount;
+    private boolean experience;
     private String appealDescription;
     private String extraDescription;
     private AddressDto addressDto;

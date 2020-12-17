@@ -1,4 +1,4 @@
-package com.tolgaaksoy.lokumcubaba.dto;
+package com.tolgaaksoy.franchiseApplication.dto;
 
 import lombok.*;
 
