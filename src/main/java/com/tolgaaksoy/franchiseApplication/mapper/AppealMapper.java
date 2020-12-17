@@ -1,7 +1,7 @@
-package com.tolgaaksoy.lokumcubaba.mapper;
+package com.tolgaaksoy.franchiseApplication.mapper;
 
-import com.tolgaaksoy.lokumcubaba.dto.AppealDto;
-import com.tolgaaksoy.lokumcubaba.models.Appeal;
+import com.tolgaaksoy.franchiseApplication.dto.AppealDto;
+import com.tolgaaksoy.franchiseApplication.models.Appeal;
 import org.mapstruct.*;
 
 import java.util.List;

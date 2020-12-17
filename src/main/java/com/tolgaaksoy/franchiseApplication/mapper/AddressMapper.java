@@ -1,8 +1,8 @@
-package com.tolgaaksoy.lokumcubaba.mapper;
+package com.tolgaaksoy.franchiseApplication.mapper;
 
-import com.tolgaaksoy.lokumcubaba.dto.AddressDto;
+import com.tolgaaksoy.franchiseApplication.dto.AddressDto;
 
-import com.tolgaaksoy.lokumcubaba.models.Address;
+import com.tolgaaksoy.franchiseApplication.models.Address;
 import org.mapstruct.*;
 
 @Mapper(componentModel = "spring")

@@ -1,7 +1,7 @@
-package com.tolgaaksoy.lokumcubaba.mapper;
+package com.tolgaaksoy.franchiseApplication.mapper;
 
-import com.tolgaaksoy.lokumcubaba.dto.CustomerDto;
-import com.tolgaaksoy.lokumcubaba.models.Customer;
+import com.tolgaaksoy.franchiseApplication.dto.CustomerDto;
+import com.tolgaaksoy.franchiseApplication.models.Customer;
 import org.mapstruct.IterableMapping;
 import org.mapstruct.Mapper;
 import org.mapstruct.Named;
