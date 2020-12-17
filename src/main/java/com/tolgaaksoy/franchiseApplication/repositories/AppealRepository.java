@@ -1,6 +1,6 @@
-package com.tolgaaksoy.lokumcubaba.repositories;
+package com.tolgaaksoy.franchiseApplication.repositories;
 
-import com.tolgaaksoy.lokumcubaba.models.Appeal;
+import com.tolgaaksoy.franchiseApplication.models.Appeal;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
